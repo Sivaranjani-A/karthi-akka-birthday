@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy birthday akka</title>
+    <style>
+        body{
+            background-image: url(https://thumbs.gfycat.com/IgnorantSelfishBarasinga-size_restricted.gif);   
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        #content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: yellowgreen;
+            font-size: 150px;
+            margin-top: 100px;
+        }
+        h1{
+            font-size: 25px;
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">3</div>
+    <script>
+        function startCountdown(seconds) {
+  let counter = seconds;
+  var text = document.getElementById("content");
+    
+  const interval = setInterval(() => {
+    text.innerHTML = counter;
+    
+    counter--;
+      
+    if (counter < 0 ) {
+        text.innerHTML = `<h1>பிறந்தநாள் வாழ்த்துக்கள், சகோதரி! 
+                              கடவுள் தம்முடைய அன்பையும் ஆசீர்வாதங்களையும் 
+                              உங்கள் மீது பொழிந்து கொண்டே இருக்கட்டும், 
+                              மேலும் மகிழ்ச்சியான நாட்களை ஒன்றாகக் கொண்டாடுவோம்!</h1>`
+                                    
+        clearInterval(counter);     
+    }
+  }, 1000);
+}
+        
+startCountdown(3);        
+        
+        
+    </script>
+    
+    
+</body>
+</html>
